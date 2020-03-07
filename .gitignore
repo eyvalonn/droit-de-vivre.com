@@ -1,0 +1,7 @@
+node_modules
+npm-debug.*
+_site
+.jekyll-cache
+
+# macOS
+.DS_Store

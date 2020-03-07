@@ -58,7 +58,7 @@ h2 { color: #7e9e9f; }
 
 .navbar-nav>li>a { padding:5px 15px 0 15px; font-weight: 300;}
 .navbar-nav>li.active>a { border-bottom: 1px solid #503a52; }
-.navbar-nav>li.fb-button { display:block; width: 61px; height: 24px; margin: 0 5px; }
+.navbar-nav>li.fb-button { display:block; width: 91px; height: 24px; margin: 0 5px; }
 
 .ddv-navbar-collapse .nav>li>a:hover, .ddv-navbar-collapse .nav>li>a:focus {background-color: transparent;}
 .ddv-navbar-collapse .navbar-brand, .ddv-navbar-collapse .navbar-nav>li>a {	text-shadow: none;}
@@ -101,4 +101,36 @@ h2 { color: #7e9e9f; }
 	.logo-fdv {background-image: url(../images/logo-fondation-descroix-vernier@2x.png); background-size: 115px 25px; }
 	.logo-cgi {background-image: url(../images/logo-conseil-general-isere@2x.png); background-size: 55px 25px; }
 	.logo-fdv img, .logo-cgi img{display: none;}
+}
+
+
+
+/* Blueimp fix imag path ... */
+/* Replace PNGs with SVGs for capable browsers (excluding IE<9) */
+body:last-child .blueimp-gallery > .slides > .slide-error {
+	background-image: url(../images/blueimp-gallery/error.svg);
+}
+body:last-child .blueimp-gallery > .play-pause {
+	background-image: url(../images/blueimp-gallery/play-pause.svg);
+}
+
+.blueimp-gallery > .slides > .slide-loading {
+	background: url(../images/blueimp-gallery/loading.gif) center no-repeat;
+	background-size: 64px 64px;
+}
+.blueimp-gallery > .slides > .slide-error {
+	background: url(../images/blueimp-gallery/error.png) center no-repeat;
+}
+.blueimp-gallery > .play-pause {
+	background: url(../images/blueimp-gallery/play-pause.png) 0 0 no-repeat;
+}
+
+.blueimp-gallery>.indicator>li:hover {
+
+	width: 50px;
+	height: 50px;
+}
+.blueimp-gallery>.indicator>li {
+	transition: width .150s ease-out, height .150s ease-out;
+	background-size: cover;
 }

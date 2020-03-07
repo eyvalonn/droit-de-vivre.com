@@ -1,0 +1,33 @@
+title:            Refuge Droit De Vivre
+description:      IT Open sources projects, APIs, ressources & docs
+logo:             assets/images/logo.png
+baseurl:   ""
+
+url:              http://droit-de-vivre.com
+
+rss_path: /rss
+
+# Owner/author information
+owner:
+  name:           Droit-de-vivre
+  email:          contact@droit-de-vivre.com
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Amsterdam
+markdown:    kramdown
+
+
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+include: []
+exclude: ['package.json', 'node_modules', 'README.md', 'Dockerfile']

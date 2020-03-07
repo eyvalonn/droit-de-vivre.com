@@ -1,0 +1,23 @@
+<div class="navbar" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse ddv-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="{{site.baseurl}}/"{% if page.key == 'index' %} class="active"{% endif %}>Présentation</a></li>
+            <li><a href="{{site.baseurl}}/histoire-de-chats.html"{% if page.key == 'histoire' %} class="active"{% endif %}>Histoire de chats</a></li>
+            <li><a href="{{site.baseurl}}/photos.html"{% if page.key == 'photos' %} class="active"{% endif %}>Galerie photos</a></li>
+            <li><a href="{{site.baseurl}}/contact.html"{% if page.key == 'contact' %} class="active"{% endif %}>Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="hidden-xs fb-button"><div class="fb-like" data-href="https://www.facebook.com/refuge.droit.de.vivre" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></li>
+            <li><a href="{{site.baseurl}}/nous-aider.html" class="btn btn-default">Aider le refuge</a></li>
+        </ul>
+    </div>
+</div>
+<p class="text-center sub-navbar"><img src="{{site.baseurl}}/assets/images/nav-brand.png" width="50" height="30"></p>
