@@ -1,7 +1,7 @@
 title:            Refuge Droit De Vivre
 description:      IT Open sources projects, APIs, ressources & docs
 logo:             assets/images/logo.png
-baseurl:   ""
+baseurl:   "https://eyvalonn.github.io/droit-de-vivre.com/"
 
 url:              http://droit-de-vivre.com
 
