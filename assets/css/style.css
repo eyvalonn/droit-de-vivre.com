@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container { font-family: 'PT Sans', sans-serif; font-size:16px; line-height:24px; }
+
+a { color:#7e9e9f; }
+a:hover, a:focus, a.active { color:#503a52; }
+h1, h2, h3, h4, b, strong { font-weight:700;}
+p { text-align:justify; color:#503a52; }
+.btn { border: solid 1px #7e9e9f; color:#7e9e9f; height: 30px; padding: 0 20px; background-color:transparent; background-image: none;border-radius: 15px;}
+.btn:hover, .btn:focus {  border: solid 1px #503a52;}
+hr { margin: 40px 0;}
+
+.margin60 { margin-top:60px;}
+.welcome {
+	height: 300px;
+	position:relative;
+	z-index:999;
+	background: transparent;
+}
+.background {
+	position: absolute;
+	top:0;
+	left:0;
+	background-image: url(../images/photo1.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat:no-repeat;
+	z-index:1;
+	filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    -ms-filter: brightness(80%);
+	height: 300px;
+	width:100%;
+}
+.logo {	display:block; background: url(../images/logo-droitdevivre-white.png) no-repeat center; height: 146px; width:300px;	margin: 40px auto;}
+.logo-more {padding: 10px 15px 0 15px;/*position: absolute;	top: 10px;*/ }
+.logo-more a {}
+
+.logo-fdv { display:block; height: 25px; width:115px;float: right;	}
+.logo-cgi {	display:block; 	height: 25px; width:55px;float: left;	}
+
+
+.welcome .fb-like {position: absolute;	bottom: 10px; right: 10px;}
+
+.page em {padding: 20px 60px; display: block; font-size: 18px; line-height: 34px; color: #7e9e9f;}
+.page p.histoire-last-line {color: #503a52; font-style: italic;}
+.page img.histoire-image {margin-top: 50px;}
+div.v-spacing {line-height: 25px; height: 25px;}
+
+
+h1 { color: #7e9e9f; margin: 10px auto 30px auto; }
+h2 { color: #7e9e9f; }
+
+.navbar {margin-top: 20px;}
+
+.navbar-nav>li>a { padding:5px 15px 0 15px; font-weight: 300;}
+.navbar-nav>li.active>a { border-bottom: 1px solid #503a52; }
+.navbar-nav>li.fb-button { display:block; width: 61px; height: 24px; margin: 0 5px; }
+
+.ddv-navbar-collapse .nav>li>a:hover, .ddv-navbar-collapse .nav>li>a:focus {background-color: transparent;}
+.ddv-navbar-collapse .navbar-brand, .ddv-navbar-collapse .navbar-nav>li>a {	text-shadow: none;}
+/*.navbar-brand {
+	display:inline-block;
+	height:30px;
+	width: 50px;
+	background: url(../images/nav-brand.png) no-repeat;
+}*/
+
+.sub-navbar {margin-top: -10px; margin-bottom: 0; opacity: .8;}
+
+.navbar .navbar-toggle .icon-bar { background-color: #7e9e9f; }
+.navbar .navbar-toggle { border-color: #ddd; margin-top: 17px; margin-left: 8px; margin-right: 0px;}
+
+.slide { margin: 30px 0;}
+.slide img, .slide .carousel-inner .item, .slide .carousel-control { border-radius: 15px;}
+
+.carousel-presentation {max-width: 1000px; margin: 0 auto;}
+.carousel-control.left, .carousel-control.right {background: none; width: 6%;}
+
+.photos-gallery a img { }
+
+
+
+@media (min-width: 1100px) {
+	.welcome, .background { height: 100%; position: fixed; top: 0; left:0; width:35%;}
+	.welcome .container, .content .container { width: 100%;}
+	.content { position: relative; margin-left: 35%;padding: 0 20px;}
+	.logo { width: 100%; margin: 120px auto; }
+}
+
+
+/*.navbar * {-webkit-box-shadow: none; -webkit-box-shadow: none; -moz-transition: all .3s ease-in-out; -webkit-transition: all .3s linear; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+*/
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min-device-pixel-ratio: 1.5) {
+
+	.logo {background-image: url(../images/logo-droitdevivre-white@2x.png); background-size: 300px 146px; }
+	.logo-fdv {background-image: url(../images/logo-fondation-descroix-vernier@2x.png); background-size: 115px 25px; }
+	.logo-cgi {background-image: url(../images/logo-conseil-general-isere@2x.png); background-size: 55px 25px; }
+	.logo-fdv img, .logo-cgi img{display: none;}
+}
